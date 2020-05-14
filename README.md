@@ -13,12 +13,7 @@ JavaScript has some very unintuitive ways to check types and values.
 const date = new Date()
 date instanceof Date // true
 ```
-What about checking primitives who are not an instance? What to do if you want to know if a value is a object and not a subclass?
-```js
-const date = new Date()
-date instanceof Object // true
-```
-I think JavaScript can do better than expecting the developer to know  ```value.constructor.name === "Object"```
+What about checking primitives who are not an instance?
 
 ### ```typeof``` is unintuitive
 as explored in [this](https://charlieharvey.org.uk/page/javascript_the_weird_parts) article, typeof can behave unexpected for values.
